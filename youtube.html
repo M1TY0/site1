@@ -8,11 +8,11 @@
                display:block;
                border-radius: 10px;
                cursor: pointer;
-               transition: border-radius 2s;
-               transition: opacity 2s;
+              
+               transition: opacity 0.5s;
             }
             .thumbnail:hover{
-                border-radius: 0px;
+           
                 opacity: 0.7;
             }
             .surch{
@@ -42,8 +42,8 @@
                 width: 40px;
                 border-radius: 50%;
                 cursor: pointer;
-                transition: border-radius 0.5s;
-                transition: opacity 0.5s;
+                transition: border-radius 0.3s;
+                transition: opacity 0.3s;
                 cursor: pointer;
             }
             .picture:hover{
@@ -57,6 +57,7 @@
             }
             .video-title:hover{
                 text-decoration: underline;
+                color: rgb(207, 201, 201);
             }
             .author{
                 font-family: Arial;
@@ -76,29 +77,35 @@
                 color: gray;
                 margin-top: 3px;
             }
+            .links{
+                text-decoration: none;
+                color: white;
+            }
         </style>
     </head>
     <body>
-        <input class = "surch"type="text" placeholder="Serch">
+       
        
         <div class="example">
             <div> 
-                <img class ="thumbnail" src="thumbnails/hq720.jpg">
+                <a href="https://www.youtube.com/watch?v=zmteCk6JejE"><img class ="thumbnail" src="thumbnails/hq720.jpg"></a>
             </div>
            
             <div>
                 <div class = "image">   
-                   <img class = "picture"src="pictures/unnamed.jpg" >
+                    <a class="links" href="https://www.youtube.com/@JesseJamesWest">  <img class = "picture" src="pictures/unnamed.jpg" ></a>
                 </div>
                 <div class = "words">
                     <div>  
-                        <p class ="video-title">
-                            Talking Tech and AI with Google CEO Sundar Pichai
-                        </p>
+                        <a class="links" href="https://www.youtube.com/watch?v=zmteCk6JejE">  
+                             <p class ="video-title">
+                                 Training W/ The Deadliest Shaolin Warrior Monk
+                           </p>
+                        </a>
                      </div>
                     <div> 
                         <p class="author">
-                            Marques Brownlee
+                           Jesse James
                         </p>
                       </div>
                     <div>  
@@ -110,16 +117,33 @@
             </div>            
         </div>
         <div class="example">
-            <img class ="thumbnail" src="thumbnails/hq721.jpg">
-            <p class ="video-title">
-                this my mother,i love her
-            </p>
-            <p class="author">
-                Laim McKenzie
-            </p>
-            <p class="stats">
-                6.7M views &#183; 11 months ago
-            </p>
+            <div> 
+                <a href="https://www.youtube.com/watch?v=Ql5YMb60CL4"> <img class ="thumbnail" src="thumbnails/hq721.jpg"></a>
+            </div>
+           
+            <div>
+                <div class = "image">   
+                    <a href="https://www.youtube.com/@lyeuhm"> <img class = "picture" src="pictures/channels4_profile.jpg" ></a>
+                </div>
+                <div class = "words">
+                    <div>  
+                        <p class ="video-title">
+                            this my mother,i love her
+                        </p>
+                     </div>
+                    <div> 
+                        <p class="author">
+                            Laim McKenzie
+                        </p>
+                      </div>
+                    <div>  
+                         <p class="stats">
+                            6.7M views &#183; 11 months ago
+                    </p> 
+                    </div>
+                 </div>               
+            </div>            
         </div>
+        
     </body>
 </html>
